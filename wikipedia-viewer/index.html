@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Font awesome CDN-->
+    <script src="https://use.fontawesome.com/bd13961830.js"></script>
+    <!--Custom style sheet-->
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <title>Wiki articles</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center">
+            <form>
+                <div class="input-group-md pt-5 input-group">
+                    <input id="searchBox" type="text" class="form-control col-md-4 col-sm-12 offset-md-4" placeholder="Search for Wikipedia articles">
+                    <span class="input-group-btn">
+                    <button id="searchButton" class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </span>
+                </div>
+            </form>
+            <button id="random" class="btn mt-3 btn-md">Get a random article</button>
+            <div id="articles">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $("#random").click(function () {
+            window.open('https://en.wikipedia.org/wiki/Special:Random', '_blank');
+        });
+        $(document).ready(function () {
+            $("#searchButton").click(function (evt) {
+                evt.preventDefault()
+                jQuery("#articles").html('');
+                var value = ($("#searchBox").val());
+                // get data from api
+                $.ajaxSetup({
+                    cache: false
+                });
+                $.getJSON("https://en.wikipedia.org/w/api.php?action=opensearch&search=" + value +
+                    "&limit=8&namespace=0&format=json&origin=*",
+                    function (data) {
+                        for (var i = 0; i < 8; i++) {
+                            $('#articles').append("<div class='article'><a href='" + data[3][i] +
+                                "'target='_blank' style='display:block;'><p>" + data[1][i] + "</p><p>" + data[
+                                    2][i] + "</p></a></div>");
+                        }
+                    });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

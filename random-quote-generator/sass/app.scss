@@ -1,0 +1,29 @@
+@import "../bower_components/bootstrap/scss/bootstrap";
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.row-fluid{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.quote{
+    min-height: 50%;
+    min-height: 50vh;
+    background-color: lightsteelblue;
+    border-radius: 30px;
+}
+.button{
+    padding-top: 10px;
+}
+p{
+    font-size: 35px;
+    font-family: 'Ubuntu', sans-serif;
+}

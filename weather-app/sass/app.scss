@@ -1,0 +1,15 @@
+@import "../bower_components/bootstrap/scss/bootstrap";
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $white;
+    h1{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 60px;
+        padding-top: 10px;
+    }
+    .weather-info{
+        padding-top: 20px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+}

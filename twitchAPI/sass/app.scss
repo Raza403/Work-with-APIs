@@ -1,0 +1,83 @@
+@import "../bower_components/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+$body-background-color: #070D79;
+$main-color: #B67B0B;
+$fcc-color:  #006400;
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: $body-background-color;
+    .wrapper {
+        border: 4px solid $main-color;
+        .heading {
+            h1 {
+                color: $main-color;
+                font-size: 400%;
+                @media only screen and (max-width:768px){
+                    font-size: 250%;
+                }
+            }
+        }
+        .buttons {
+            
+                .list {
+                    text-align: center;
+                    width: 80px;
+                    background-color: $fcc-color;
+                    color: $white;
+                    border: 3px solid $main-color;
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        background-color: $main-color;
+                        color: $body-background-color;
+                        width: 90px;
+                    }
+                }
+            }
+        }
+        #data{
+            .channels{
+                border: 4px solid $main-color;
+                overflow: hidden;
+                img{
+                    @media only screen and (min-width:769px){
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                    border: 4px $main-color solid;
+                    }
+                    @media only screen and (max-width:768px){
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        border: 2px $main-color solid;
+                        }
+                }
+                .font{
+                    @media only screen and (min-width:769px){
+                    text-align: center;
+                    height: 100px;
+                    line-height: 100px;
+                    color: $main-color;
+                    font-size: 20px;
+                    font-weight: bold;
+                    }
+                    @media only screen and (max-width:768px){
+                        text-align: center;
+                        height: 60px;
+                        line-height: 60px;
+                        color: $main-color;
+                        font-size: 15px;
+                        font-weight: bold;
+                     }
+                }
+                .status{
+                    text-align: center;
+                    height: 100px;
+                    line-height: 100px;
+                    color: $main-color;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
