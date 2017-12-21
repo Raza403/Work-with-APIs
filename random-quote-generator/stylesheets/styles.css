@@ -1,0 +1,351 @@
+button,
+html {
+    font-family: sans-serif
+}
+
+.btn-primary:active,
+.btn:active {
+    background-image: none
+}
+
+.btn,
+.row-fluid {
+    vertical-align: middle
+}
+
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+button {
+    font-size: 100%;
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+.col-md-6,
+.col-sm-6,
+.container-fluid {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+button:-moz-focusring {
+    outline: ButtonText dotted 1px
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+.btn,
+body {
+    font-weight: 400;
+    font-size: 1rem
+}
+
+@media print {
+    *,
+    ::after,
+    ::before,
+    div::first-letter,
+    div::first-line,
+    p::first-letter,
+    p::first-line {
+        text-shadow: none!important;
+        box-shadow: none!important
+    }
+    a,
+    a:visited {
+        text-decoration: underline
+    }
+    p {
+        orphans: 3;
+        widows: 3
+    }
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit
+}
+
+@-ms-viewport {
+    width: device-width
+}
+
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+    color: #292b2c;
+    background-color: #fff
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    color: #0275d8;
+    text-decoration: none
+}
+
+a:focus,
+a:hover {
+    color: #014c8c;
+    text-decoration: underline
+}
+
+[role=button] {
+    cursor: pointer
+}
+
+[role=button],
+a,
+button {
+    touch-action: manipulation
+}
+
+button:focus {
+    outline: dotted 1px;
+    outline: -webkit-focus-ring-color auto 5px
+}
+
+button {
+    line-height: inherit
+}
+
+.container-fluid {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.col-md-6,
+.col-sm-6 {
+    width: 100%;
+    min-height: 1px
+}
+
+@media (min-width:992px) {
+    .col-md-6,
+    .col-sm-6,
+    .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+@media (min-width:1200px) {
+    .col-md-6,
+    .col-sm-6,
+    .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+@media (min-width:576px) {
+    .col-md-6,
+    .col-sm-6,
+    .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%
+    }
+    .offset-sm-3 {
+        margin-left: 25%
+    }
+}
+
+@media (min-width:768px) {
+    .col-md-6,
+    .col-sm-6,
+    .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%
+    }
+    .offset-md-3 {
+        margin-left: 25%
+    }
+}
+
+.btn {
+    display: inline-block;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    transition: all .2s ease-in-out
+}
+
+.btn:focus,
+.btn:hover {
+    text-decoration: none
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(2, 117, 216, .25)
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: .65
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #025aa5;
+    border-color: #01549b
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 2px rgba(2, 117, 216, .5)
+}
+
+.btn-primary:disabled {
+    background-color: #0275d8;
+    border-color: #0275d8
+}
+
+.btn-primary:active {
+    color: #fff;
+    background-color: #025aa5;
+    border-color: #01549b
+}
+
+.text-center {
+    text-align: center!important
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.container-fluid {
+    height: 100%;
+    width: 100%;
+    display: table
+}
+
+.row-fluid {
+    height: 100%;
+    display: table-cell
+}
+
+.quote {
+    min-height: 50%;
+    min-height: 50vh;
+    background-color: #b0c4de;
+    border-radius: 30px
+}
+
+.button {
+    padding-top: 10px
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-family: Ubuntu, sans-serif
+}
+
+[class^=icon-] {
+    font-family: fontello;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1em
+}
+
+@font-face {
+    font-family: fontello;
+    src: url(../font/fontello.eot?3313131);
+    src: url(../font/fontello.eot?3313131#iefix) format('embedded-opentype'), url(../font/fontello.woff2?3313131) format('woff2'), url(../font/fontello.woff?3313131) format('woff'), url(../font/fontello.ttf?3313131) format('truetype'), url(../font/fontello.svg?3313131#fontello) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+[class^=icon-]:before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: fontello;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em
+}
+
+@font-face {
+    font-family: fontello;
+    src: url('./font/fontello.eot');
+    src: url('./font/fontello.eot') format('embedded-opentype'), url('./font/fontello.woff2') format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: fontello;
+    src: url('./font/fontello.woff2') format('woff2')
+}
+
+.icon-twitter:before {
+    content: '\f099'
+}
+
+/* ubuntu-500 - latin */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./font/ubuntu-v11-latin-500.eot'); /* IE9 Compat Modes */
+    src: local('Ubuntu Medium'), local('Ubuntu-Medium'),
+         url('./font/ubuntu-v11-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./font/ubuntu-v11-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('./font/ubuntu-v11-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+  }

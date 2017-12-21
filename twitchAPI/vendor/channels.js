@@ -1,0 +1,3 @@
+$(document).ready(function(){$.ajaxSetup({cache:false});var address=["https://wind-bow.glitch.me/twitch-api/streams/freecodecamp","https://wind-bow.glitch.me/twitch-api/streams/ESL_SC2","https://wind-bow.glitch.me/twitch-api/streams/noobs2ninjas"]
+var ids=["#fcc","#esl","#ninja"]
+for(let i=0;i<3;i++){$.getJSON(address[i],function(data){if(data.stream==null){$(ids[i]).append("<p class='ml-5 font'>Offline<p>");$(ids[i]).addClass("off");}else{$(ids[i]).append("<p class='ml-5 status'>"+data.stream.channel.status||data.stream.channel.game+"<p>");$(ids[i]).addClass("on");}});}$("#all").click(function(){$('#fcc,#esl,#ninja').show();});$("#online").click(function(){$(".off").hide();$(".on").show();});$("#offline").click(function(){$(".off").show();$(".on").hide();});});

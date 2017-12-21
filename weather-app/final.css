@@ -1,0 +1,325 @@
+button,
+html {
+  font-family: sans-serif;
+}
+
+.btn-primary:active,
+.btn-success:active,
+.btn:active {
+  background-image: none
+}
+
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent
+}
+
+header {
+  display: block
+}
+
+h1 {
+  margin: .67em 0
+}
+
+button {
+  font-size: 100%;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button
+}
+
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0
+}
+
+button:-moz-focusring {
+  outline: ButtonText dotted 1px
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit
+}
+
+@media print {
+  *,
+   ::after,
+   ::before,
+  div::first-letter,
+  div::first-line {
+    text-shadow: none!important;
+    box-shadow: none!important
+  }
+  h3 {
+    orphans: 3;
+    widows: 3;
+    page-break-after: avoid
+  }
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit
+}
+
+@-ms-viewport {
+  width: device-width
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #fff;
+}
+
+h1,
+h3 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit
+}
+
+body .weather-info,
+body h1 {
+  font-family: Ubuntu, sans-serif
+}
+
+button {
+  touch-action: manipulation;
+  line-height: inherit
+}
+
+button:focus {
+  outline: dotted 1px;
+  outline: -webkit-focus-ring-color auto 5px
+}
+
+h1 {
+  font-size: 2.5rem
+}
+
+h3 {
+  font-size: 1.75rem
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px
+}
+
+.col-md-3,
+.col-sm-6 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px
+}
+
+@media (min-width:992px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px
+  }
+  .col-md-3,
+  .col-sm-6 {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+}
+
+@media (min-width:1200px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px
+  }
+  .col-md-3,
+  .col-sm-6 {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+}
+
+@media (min-width:576px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px
+  }
+  .col-md-3,
+  .col-sm-6 {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%
+  }
+}
+
+@media (min-width:768px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px
+  }
+  .col-md-3,
+  .col-sm-6 {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%
+  }
+  .offset-md-3 {
+    margin-left: 25%
+  }
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: all .2s ease-in-out
+}
+
+.btn:focus,
+.btn:hover {
+  text-decoration: none
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(2, 117, 216, .25)
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: .65
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0275d8;
+  border-color: #0275d8
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #025aa5;
+  border-color: #01549b
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 2px rgba(2, 117, 216, .5)
+}
+
+.btn-primary:disabled {
+  background-color: #0275d8;
+  border-color: #0275d8
+}
+
+.btn-primary:active {
+  color: #fff;
+  background-color: #025aa5;
+  border-color: #01549b
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #5cb85c
+}
+
+.btn-success:hover {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #419641
+}
+
+.btn-success:focus {
+  box-shadow: 0 0 0 2px rgba(92, 184, 92, .5)
+}
+
+.btn-success:disabled {
+  background-color: #5cb85c;
+  border-color: #5cb85c
+}
+
+.btn-success:active {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #419641
+}
+
+.text-center {
+  text-align: center!important
+}
+
+body h1 {
+  font-size: 60px;
+  padding-top: 10px
+}
+
+body .weather-info {
+  padding-top: 20px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.beach {
+  background-image: url("./images/beach.jpg");
+}
+
+.winter {
+  background-image: url("./images/winter.jpg")
+}
+
+.desert {
+  background-image: url("./images/desert.jpg")
+}
+
+.img-fluid {
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ubuntu-500 - latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/ubuntu-v11-latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium'),
+       url('./fonts/ubuntu-v11-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/ubuntu-v11-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/ubuntu-v11-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+}

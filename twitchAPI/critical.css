@@ -1,0 +1,362 @@
+.btn,
+.list {
+    text-align: center
+}
+
+button,
+html {
+    font-family: sans-serif
+}
+
+.btn,
+img {
+    vertical-align: middle
+}
+
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent
+}
+
+img {
+    border-style: none
+}
+
+button {
+    font-size: 100%;
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+.col-md-9,
+.col-sm-1,
+.col-sm-8,
+.container {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+button:-moz-focusring {
+    outline: ButtonText dotted 1px
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+.btn,
+body {
+    font-size: 1rem
+}
+
+*,
+::after,
+::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+@-ms-viewport {
+    width: device-width
+}
+
+body {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #B67B0B;
+    font-size: 400%
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    color: #0275d8;
+    text-decoration: none
+}
+
+a,
+button {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation
+}
+
+button {
+    line-height: inherit
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto
+}
+
+@media (min-width:576px) {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 540px;
+        max-width: 100%
+    }
+    .row {
+        margin-right: -15px;
+        margin-left: -15px
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 720px;
+        max-width: 100%
+    }
+    .row {
+        margin-right: -15px;
+        margin-left: -15px
+    }
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+@media (min-width:992px) {
+    .col-md-9,
+    .col-sm-1,
+    .col-sm-8,
+    .container {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+    .container {
+        width: 960px;
+        max-width: 100%
+    }
+    .row {
+        margin-right: -15px;
+        margin-left: -15px
+    }
+}
+
+@media (min-width:1200px) {
+    .col-md-9,
+    .col-sm-1,
+    .col-sm-8,
+    .container {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+    .container {
+        width: 1140px;
+        max-width: 100%
+    }
+    .row {
+        margin-right: -15px;
+        margin-left: -15px
+    }
+}
+
+.col-md-9,
+.col-sm-1,
+.col-sm-8 {
+    width: 100%;
+    min-height: 1px
+}
+
+@media (min-width:576px) {
+    .col-md-9,
+    .col-sm-1,
+    .col-sm-8 {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+    .col-sm-1 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.33333%;
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%
+    }
+    .col-sm-8 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66667%;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%
+    }
+    .offset-sm-8 {
+        margin-left: 66.66667%
+    }
+}
+
+@media (min-width:768px) {
+    .col-md-9,
+    .col-sm-1,
+    .col-sm-8 {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+    .col-md-9 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%
+    }
+    .offset-md-9 {
+        margin-left: 75%
+    }
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    border-radius: .25rem
+}
+
+.mt-2 {
+    margin-top: .5rem!important
+}
+
+.ml-2 {
+    margin-left: .5rem!important
+}
+
+.mt-3 {
+    margin-top: 1rem!important
+}
+
+.mt-4 {
+    margin-top: 1.5rem!important
+}
+
+.pl-2 {
+    padding-left: .5rem!important
+}
+
+.pt-3 {
+    padding-top: 1rem!important
+}
+
+.pt-4 {
+    padding-top: 1.5rem!important
+}
+
+.pb-4 {
+    padding-bottom: 1.5rem!important
+}
+
+@font-face {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/oswald-v16-latin-regular.eot);
+    src: local("Oswald Regular"), local("Oswald-Regular"), url(../fonts/oswald-v16-latin-regular.woff2) format("woff2"), url(../fonts/oswald-v16-latin-regular.woff) format("woff"), url(../fonts/oswald-v16-latin-regular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/oswald-v16-latin-700.eot);
+    src: local("Oswald Bold"), local("Oswald-Bold"), url(../fonts/oswald-v16-latin-700.woff2) format("woff2"), url(../fonts/oswald-v16-latin-700.woff) format("woff"), url(../fonts/oswald-v16-latin-700.ttf) format("truetype")
+}
+
+body {
+    font-family: Oswald, sans-serif;
+    background-color: #070D79
+}
+
+.wrapper {
+    border: 4px solid #B67B0B
+}
+
+.list {
+    width: 80px;
+    background-color: #006400;
+    color: #fff;
+    border: 3px solid #B67B0B
+}
+
+.channels {
+    border: 4px solid #B67B0B;
+    overflow: hidden
+}
+
+@media only screen and (min-width:769px) {
+    .channels img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 4px solid #B67B0B
+    }
+}
+
+@media only screen and (max-width:768px) {
+    h1 {
+        font-size: 250%
+    }
+    .channels img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: 2px solid #B67B0B
+    }
+}
+
+@media only screen and (min-width:769px) {
+    .channels .font {
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+        color: #B67B0B;
+        font-size: 20px;
+        font-weight: 700
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .channels .font {
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        color: #B67B0B;
+        font-size: 15px;
+        font-weight: 700
+    }
+}

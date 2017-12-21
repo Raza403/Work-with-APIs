@@ -3,67 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheets/app.css">
-    <title>Your weather</title>
+    <!-- Critical CSS not extracted and CSS render blocking not eleminated due to small CSS file. -->
+    <link rel="stylesheet" href="./final.css">
+    <meta name="description" content="This page displays users local weather update in centigrades and fahrenhiet">
+    <title>Your local weather-info</title>
 </head>
 
 <body>
     <header class="text-center">
         <h1>Your Local Weather</h1>
     </header>
-    <div class="text-center weather-info">
-        <h3 id="city"></h3>
-        <h3 id="description"></h3>
-        <h3 id="temp"></h3>
-        <div class="row">
+    <section id="main-body">
+        <div class="text-center weather-info">
+            <h3 id="city"></h3>
+            <h3 id="description"></h3>
+            <h3 id="temp"></h3>
+            <div class="row">
                 <button id="f" class="btn btn-primary offset-md-3 col-sm-6 col-md-3">Temperature in fahrenheit</button>
                 <button id="c" class="btn btn-success col-sm-6 col-md-3">Temperature in Centigrade</button>
             </div>
-        
-        
-        
-    </div>
-
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/tether/dist/js/tether.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                // get data from api
-                $.ajaxSetup({
-                    cache: false
-                });
-                $.getJSON("https://fcc-weather-api.glitch.me/api/current?lat=" + position.coords.latitude + 
-                "&lon=" + position.coords.longitude,function(data){
-                    var c = data.main.temp;
-                    var f = (c*9/5) + 32;
-                    $("#city").html("<p>" + data.name + "</p>");
-                    $("#temp").html("<p>" + c + " &#8451;</p>");
-                    $("#description").html("<p>" + data.weather[0].description + "</p>");
-                    $("#c").click(function(){
-                        $("#temp").html("<p>" + c + " &#8451;</p>");
-                    });
-                    $("#f").click(function(){
-                        $("#temp").html("<p>" + f.toFixed(2) + " &#8457;</p>");
-                    });
-                    if (temp<=20){
-                    $("body").css("background","url('http://wallpaperscraft.com/image/snow_snowflake_winter_73812_1024x768.jpg')");
-                    }
-                    if(20 < temp <30){
-                        $("body").css("background","url('http://wallpaperscraft.com/image/beach_tropics_sea_sand_palm_trees_yachts_84735_1024x768.jpg')");
-                    }
-                    if (temp > 30) {
-                        $("body").css("background","url('http://wallpaperscraft.com/image/desert_sand_emptiness_114156_1024x768.jpg')");
-                    }
-
-                });
-            });
-        }
-    </script>
+        </div>
+    </section>
+    <!-- Customized javascript code also included in jquery file for less file requests from server. -->
+    <script src="./jquery.min.js"></script>
 </body>
-
 </html>

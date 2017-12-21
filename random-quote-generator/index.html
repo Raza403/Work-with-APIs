@@ -1,78 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--Font Awesome CDN-->
-    <script src="https://use.fontawesome.com/bd13961830.js"></script>
-    <!--Custom google font-->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <!--Custom stylesheet-->
-    <link rel="stylesheet" type="text/css" href="stylesheets/app.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <!-- Viewport for responsive web design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Custom stylesheet-->
+  <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+  <meta name="description" content="This web app gets a new quote every time using API, changes background and text color randomly. You can also tweet the quote by clicking tweet button">
+  <title>Random quote generator</title>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="quote col-md-6 col-sm-6 offset-md-3 offset-sm-3">
-                <div class="quote">
-                    <p id="content"></p>
-                </div>
-
-            </div>
-            <div class="button text-center">
-                <a class="btn btn-primary btn-md" href="https://twitter.com/intent/tweet?text=#content" role="button" id="tweet"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <button class="btn btn-primary btn-md" id="get">New Quote</button>
-            </div>
+      <div class="row-fluid">
+        <div class="quote col-md-6 col-sm-6 offset-md-3 offset-sm-3">
+          <div class="quote">
+            <p id="content"></p>
+          </div>
 
         </div>
-    </div>
-    </div>
+        <div class="button text-center">
+          <a class="btn btn-primary btn-md" href="https://twitter.com/intent/tweet?text=#content" role="button" id="tweet">
+            <i class="icon-twitter" aria-hidden="true"></i>
+          </a>
+          <button class="btn btn-primary btn-md" id="get">New Quote</button>
+        </div>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/tether/dist/js/tether.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!--Custom script to get data from api and display, also changes color and background color-->
-<script>
-    //Array of colors added to select random color from here for "p" and body element.
-    var colors = ['#0000', '#5333FF', '#FF3351', '#FF33C5', '#A033FF', '#FF8333', '#FF3333', '#2C3E50', '#145A32'];
-    $("#get").on('click', getData);
-    //Gets data from API.
-    function getData() {
-        $.ajaxSetup({
-            cache: false
-        });
-        $.getJSON(
-            "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=2&callback=",
-            function (data) {
-                var content = data[0].content;
-                //Length of content is controlled because it is to be tweeted hence below 140 chars.
-                if (content.length > 120) {
-                    getData();
-                } else {
-                    $("#content").html(content + "____" + data[0].title)
-                    //Function for selecting random colors and applying.
-                    $(document).ready(function () {
-                        var rand = colors[Math.floor(Math.random() * colors.length)];
-                        $("p").css("color", rand);
-                        $(".container-fluid").css("background-color", rand);
-                        $("#get").css("color", rand);
-                        $(".fa").css("color", rand);
-                    });
-                }
-            });
-    }
-    $("#tweet").on('click', tweeter);
-
-    function tweeter() {
-        var text = $("#content").text();
-        var tweet = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text);
-        window.open(tweet, '_blank');
-    }
-</script>
+      </div>
+    </div>
+  <script src="./jquery.min.js"></script>
+  <!--Custom script to get data from api and display, also changes color and background color-->
+  <script src="./fetchQuote.js"></script>
 </body>
 
 </html>
